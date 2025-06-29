@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-style: normal;
+}
+
+b {
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue !important;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: white;
+    color: black;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+.pfp-name-title {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.pfp-name-title img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(10%);
+}
+
+.name-title {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-title pre {
+    color: black;
+}
+
+.name {
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.item {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    /* color: blue; */
+}
+
+.item-header p {
+    margin-right: 5px;
+}
+
+.item-header hr {
+    flex-grow: 1;
+    /* border-color: #57b9ff; */
+}
+
+.exp {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.org-img {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.exp-info {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exp-info p:first-child {
+    font-weight: 600;
+}
+
+.exp-info p {
+    white-space: pre;
+}
+
+.custom-list {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-list a {
+    text-decoration: underline;
+    color: black;
+    font-style: italic;
+}
+
+.custom-list li {
+    padding-bottom: 10px;
+}
+
+.tech-ico {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tech-ico img{
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1240px) {
+    .wrapper {
+        width: 92%;
+        overflow-x: hidden;
+    }
+
+    .custom-list {
+        flex-direction: column;
+    }
+
+    .pfp-name-title {
+        flex-direction: column;;
+        margin-bottom: 45px;;
+    }
+    
+    .pfp-name-title img {
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .name-title {
+        margin-left: 0px;
+    }
+}
